@@ -4,33 +4,34 @@
     <meta charset="utf-8">
     <title>Reid Shipley Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="app.js" charset="utf-8"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- make this header a flexbox with a background image -->
-    <header id = "home-header">
+    <header class="HOME" id = "home-header">
       <!-- give title a black background with an opacity-->
       <h1 id ="Reid">Reid Shipley</h1>
-      <h3 id ="current-page">This element will display current page user is on</h3>
+      <h3 id ="current-page">"Home is where one starts from. <br> ~ T.S Elliot"</h3>
       <nav id = "navbar">
         <ul id = "navlinks">
-          <a id = "navlink" href="Home.html">HOME</a>
-          <a id = "navlink" href="Bio.html">BIO</a>
-          <a id = "navlink" href="Resume.html">RESUME</a>
-          <a id = "navlink" href="Projects.html">PROJECTS</a>
+          <li class = "home"><a id = "navlink" href="Home.html">HOME</a></li>
+          <li class = "home"><a id = "navlink" href="Bio.html">BIO</a></li>
+          <li class = "home"><a id = "navlink" href="Resume.html">RESUME</a></li>
+          <li class = "home"><a id = "navlink" href="Projects.html">PROJECTS</a></li>
         </ul>
       </nav>
     </header>
+    <div id = "carousel-home">
 
+    </div>
     <footer>
-      <ion-icon name="logo-linkedin" href="https://www.linkedin.com/in/reid-shipley-software-development/"></ion-icon>
-      <a id ="followme" href="https://www.linkedin.com/in/reid-shipley-software-development/">FOLLOW ME ON LINKEDIN"</a>
-      <ion-icon name="logo-github"></ion-icon>
-      <a id="followme" href="https://github.com/billiam95/Project_Portfolio">CHECK OUT MY GITHUB</a>
+      <!-- linkedin -->
+      <a id ="followme" href="https://www.linkedin.com/in/reid-shipley-software-development/"><ion-icon name="logo-linkedin" href="https://www.linkedin.com/in/reid-shipley-software-development/"></ion-icon></a>
+      <!-- github  -->
+      <a id="followme" href="https://github.com/billiam95/Project_Portfolio"><ion-icon name="logo-github"></ion-icon></a>
+      <!-- discord -->
+      <a id="followme" href="https://discord.gg/fRSSaSH8"><ion-icon name="logo-discord"></ion-icon></a>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

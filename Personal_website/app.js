@@ -1,1 +1,6 @@
+$(() => {
+console.log(`jquery active`)
 
+
+
+});
