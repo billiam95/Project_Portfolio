@@ -56,21 +56,22 @@ border-top-left-radius: 80%; */
 #navbar {
 background-color: rgba(255,255,255,0.6);
 border-style: inset;
+width: inherit;
 }
 
 
 #navlinks {
   list-style: none;
   padding-left: 0;
-  display: flex;
-  margin-left: 8%;
+  width: inherit;
 }
 
 a#navlink {
-  padding-right: 19%;
+  padding-right: 5vw;
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
+  padding-left: 7vw;
 }
 
 ion-icon {
