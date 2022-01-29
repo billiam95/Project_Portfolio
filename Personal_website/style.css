@@ -1,6 +1,7 @@
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
   background-image: linear-gradient( #598ad2,#2e285d,#aa6fa8, #ffada2);
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,20 +192,48 @@ div#carousel-home {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  height: 30vh;
+  justify-content: space-between;
+  height: 70vh;
   width: 70vw;
-  border: 2px solid black;
   margin-top: 3%;
   margin-left: 15%;
   margin-bottom: 3%;
 }
 
 div#picture-box {
-  height:100px;
-  width:100px;
-  border: 2px solid black;
+  height:35vh;
+  width:40vw;
+}
 
+p.quote {
+  display: none;
+  padding: 3% 5%;
+  font-size: 2em;
+  color: black;
+  font-family: 'IM Fell English SC', serif;
+  line-height: 150%
 }
 
 /* BUTTON ANIMATIONS */
+
+button.button {
+background-color: purple;
+padding: 1%;
+font-size: 1em;
+color: lavender;
+border-style: outset;
+border-radius: 20%;
+ }
+
+
+button.button:hover {
+  background-color: lavender;
+  padding: 1.5%;
+  font-size: 1.5em;
+  color: purple;
+  border-style: outset;
+  border-radius: 20%;
+  font-weight: bolder;
+  transition: all 0.5s;
+  transition: all 0.5s;
+}
