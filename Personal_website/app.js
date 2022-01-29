@@ -18,4 +18,18 @@ $(`.next`).on(`click`, () => {
 $(`.carousel-image-home`).eq(imageNum).fadeIn(500)
 });
 
+$(`.previous`).on(`click`, () => {
+  $(`.carousel-image-home`).eq(imageNum).fadeOut(500)
+  $(`.carousel-image-home`).delay(500)
+  if (imageNum <= 0)
+    {
+    imageNum = imageIndex;
+    }
+  else
+    {
+    imageNum--;
+    }
+  $(`.carousel-image-home`).eq(imageNum).fadeIn(500)
+})
+
 })
