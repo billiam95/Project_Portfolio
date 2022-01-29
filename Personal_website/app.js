@@ -32,4 +32,5 @@ $(`.previous`).on(`click`, () => {
   $(`.carousel-image-home`).eq(imageNum).fadeIn(500)
 })
 
+
 })
