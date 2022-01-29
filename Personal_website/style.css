@@ -73,8 +73,25 @@ background-color: rgba(255,255,255,0.6);
 width: 70vw;
 }
 
+nav#navbar-bio {
+display: flex;
+background-color: rgba(255,255,255,0.6);
+width: 100vw;
+position: sticky; top: 0;
+}
+
 
 ul#navlinks {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: inherit;
+}
+
+ul#navlinks-bio {
   margin: 0;
   display: flex;
   justify-content: space-around;
@@ -214,6 +231,15 @@ p.quote {
   line-height: 150%
 }
 
+@media (max-width: 1600px) {
+  p.quote {
+    padding: 2% 4%;
+    font-size: 1.5em;
+    line-height: 100%;
+  }
+
+}
+
 /* BUTTON ANIMATIONS */
 
 button.button {
@@ -236,4 +262,19 @@ button.button:hover {
   font-weight: bolder;
   transition: all 0.5s;
   transition: all 0.5s;
+}
+
+/* BIO CSS */
+
+article.bio-segment {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90vw;
+  height: 45vh;
+}
+
+.bio {
+  width: 200px;
+  height:200px;
 }
