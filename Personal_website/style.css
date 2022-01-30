@@ -62,7 +62,7 @@ border-top-left-radius: 80%; */
   margin-left: 55%;
   margin-right: 10%;
   color: black;
-  font-family: 'Supermercado One', cursive;
+  font-family: 'Lato', sans-serif;
   font-size: 2em;
 }
 
@@ -238,7 +238,7 @@ p.quote {
   padding: 2% 5%;
   font-size: 2em;
   color: black;
-  font-family: 'Supermercado One', cursive;
+  font-family: 'Lato', sans-serif;
   line-height: 150%;
 
 }
@@ -248,7 +248,7 @@ p.quote {
     padding: 2% 5%;
     font-size: 2.5em;
     color: black;
-    font-family: 'Supermercado One', cursive;
+    font-family: 'Lato', sans-serif;
     line-height: 150%;
   }
   #current-page {
@@ -257,7 +257,7 @@ p.quote {
     margin-left: 55%;
     margin-right: 5%;
     color: black;
-    font-family: 'Supermercado One', cursive;
+    font-family: 'Lato', sans-serif;
     font-size: 2.5em;
   }
 }
@@ -293,7 +293,7 @@ p.quote {
     margin-left: 55%;
     margin-right: 5%;
     color: black;
-    font-family: 'Supermercado One', cursive;
+    font-family: 'Lato', sans-serif;
     font-size: 1.5em;
   }
   #Reid {
@@ -421,6 +421,7 @@ article.bio-segment {
   height:43vh;
   object-fit: cover;
   magrin: 3% 2%;
+  box-shadow: 10px 10px 15px black;
 }
 
 
@@ -440,14 +441,20 @@ article.bio-segment {
 
 p.bio-info {
   font-size: 2em;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Lato', sans-serif;
 }
 
 h2.bio-header {
   font-size: 4em;
   margin: 0;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Monoton', cursive;
   font-weight: 900;
+  color: purple;
+}
+
+img#friend {
+  object-fit: cover;
+  object-position: top;
 }
 
 @media (max-width: 1500px) {
@@ -528,7 +535,7 @@ img#scholar {
 /* MODAL BIO */
 
 #bio-modal {
-  position: sticky; top: 5%;
+  position: sticky; top: 8%;
 }
 
 #modal {
@@ -558,13 +565,15 @@ img#scholar {
 }
 h2#project-header {
   color: white;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 p#portfolio-description {
   color: white;
   font-size: 3em;
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 header.project-header {
@@ -579,18 +588,21 @@ header.project-header {
   margin-right: 30%;
   border: 8px solid purple;
   border-radius: 30px;
-  margin-bottom: 1%;
+  margin-bottom: 10%;
 
 }
 #project-title {
   color: purple;
   font-size: 3em;
+  font-family: 'Monoton', cursive;
+
 
 }
 
 #project-info {
   color: purple;
   font-size: 2em;
+  font-family: 'Lato', sans-serif;
 
 }
 
@@ -600,5 +612,5 @@ img#coffee {
 }
 
 img#kali {
-  margin-left: 10%;
+  margin-left: 25%;
 }
