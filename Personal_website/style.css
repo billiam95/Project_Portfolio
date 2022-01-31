@@ -700,7 +700,7 @@ main.resume-flexbox {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100vw;
   height: 100%;
   margin-bottom: 5%;
@@ -709,16 +709,16 @@ main.resume-flexbox {
 }
 
 div.resume-div {
-  height: 65vh;
-  width: 30vw;
+  height: 80vh;
+  width: 40vw;
   border: 8px solid purple;
   border-radius: 15px;
-  margin-left: 3%;
   margin-top: 3%;
+  box-shadow: 5px 10px 10px black;
 }
 
 div#item1 {
-  background-image: url('imgs/TY_selectedbackrnd.png');
+  background-image: url('imgs/TY_handshake.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -726,24 +726,50 @@ div#item1 {
 
 div#item2 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
 }
 div#item3 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
 }
 
 div#item4 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
 }
 
 div#item5 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
 }
 
 div#item6 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
+}
+
+h2.resume-header {
+  color: purple;
+  text-decoration: underline;
+  padding-left: 3%;
+  margin:0;
+  font-size: 1.75em;
+  font-family: 'Lato', sans-serif;
+}
+
+p.resume-info {
+  margin: 0;
+  padding-left: 3%;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
 }
