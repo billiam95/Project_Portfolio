@@ -77,7 +77,8 @@ const barbieBoy = () => {
   $(`#project-title`).css(`color`,`#E0218A`)
   $(`#project-title`).css(`font-family`,`'Lobster', cursive`)
   $(`h2`).css(`font-family`,`'Lobster', cursive`)
-  $(`h2.project-header`).css(`color`, `#E0218A` )
+  $(`h2.project-header`).css(`color`, `white` )
+  $(`p#portfolio-description`).css(`color`, `white`)
 }
 
 const falloutBoy = () => {
@@ -98,28 +99,33 @@ const falloutBoy = () => {
   $(`#project-title`).css(`color`,`#56483F`)
   $(`#project-title`).css(`font-family`,`'Neonderthaw', cursive` )
   $(`h2`).css(`font-family`,`'Neonderthaw', cursive` )
-  $(`h2.project-header`).css(`color`, `#56483F` )
+  $(`h2.project-header`).css(`color`, `goldenrod` )
+  $(`p#portfolio-description`).css(`color`, `goldenrod`)
+  $(`div#p1`).css(`background`, `#56483F`)
 }
 
 const midnightRun = () => {
   $(`body`).css(`background-image`, `linear-gradient( #598ad2,#2e285d,#aa6fa8, #ffada2)`);
   $(`#Reid`).css(`border`,`8px solid #a989f1`);
   $(`#Reid`).css(`color`,`purple`);
-  $(`#Reid`).css(`font-family`,`Monoton', cursive`)
-  $(`a#navlink`).css(`color`,`purple`)
-  $(`a#navlink`).css(`font-family`,`'Monoton', cursive` )
+  $(`#Reid`).css(`font-family`,`Monoton', cursive`);
+  $(`a#navlink`).css(`color`,`purple`);
+  $(`a#navlink`).css(`font-family`,`'Monoton', cursive` );
   $(`button.button`).css(`background-color`,`purple`);
   $(`button.button`).css(`color`,`lavender`);
-  $(`ion-icon`).css(`color`, `lavender`)
-  $(`footer`).css(`background-color`, `#2e285d`)
-  $(`h2.bio-header`).css(`color`,`purple`)
-  $(`h2.bio-header`).css(`font-family`,`'Monoton', cursive` )
-  $(`article`).children().css(`border`,`solid 5px purple`)
-  $(`header.project-header`).css(`border`,`8px solid purple`)
-  $(`#project-title`).css(`color`,`purple`)
-  $(`h1`).css(`font-family`,`'Monoton', cursive` )
-  $(`h2`).css(`font-family`,`'Passion One', cursive` )
-  $(`h2.project-header`).css(`color`, `purple` )
+  $(`ion-icon`).css(`color`, `lavender`);
+  $(`footer`).css(`background-color`, `#2e285d`);
+  $(`h2.bio-header`).css(`color`,`purple`);
+  $(`h2.bio-header`).css(`font-family`,`'Monoton', cursive` );
+  $(`article`).children().css(`border`,`solid 5px purple`);
+  $(`header.project-header`).css(`border`,`8px solid purple`);
+  $(`#project-title`).css(`color`,`purple`);
+  $(`h1`).css(`font-family`,`'Monoton', cursive` );
+  $(`h2`).css(`font-family`,`'Passion One', cursive` );
+  $(`h2.project-header`).css(`color`, `purple` );
+  $(`div#p1`).css(`background`, `rgba(255,255,255,0.5)`);
+  $(`p#portfolio-description`).css(`color`, `black`);
+  $(`h2.bio-header`).css(`font-family`,`'Monoton', cursive` );
 
 }
 

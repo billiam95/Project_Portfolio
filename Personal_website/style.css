@@ -223,7 +223,7 @@ div#carousel-home {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 50vh;
+  height: 70vh;
   width: 70vw;
   margin-top: 3%;
   margin-left: 15%;
@@ -243,12 +243,12 @@ div#picture-box {
 
 p.quote {
   display: none;
-  padding: 2% 5%;
+  padding: 5% 10%;
   font-size: 2em;
   color: black;
   font-family: 'Lato', sans-serif;
   line-height: 150%;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.2);
   border-radius: 15px;
 
 }
@@ -286,8 +286,7 @@ p.quote {
     justify-content: center;
     height:40vh;
     width:55vw;
-    padding: 10%;
-    margin-bottom: 0;
+    padding: 5%;
     text-align: center;
   }
   div#carousel-home {
@@ -333,7 +332,7 @@ p.quote {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
 
   #Reid {
     width: 85vw;
@@ -341,20 +340,11 @@ p.quote {
 
   }
   header#home-header {
-    display: flex;
-    justify-content: space-between;
-    /* border-style: inset; */
-    box-shadow: 3px 3px 3px #598ad2, 6px 6px 6px #2e285d;
     width: 95vw;
     height: 70vh;
     margin-left: 2.5%;
     margin-right: 2.5%;
     margin-top: 2.5%;
-    flex-direction: column;
-    background-image: url('imgs/homeshot.jpg');
-    background-color: rgba(0,0,0,.5;);
-    background-position: center;
-    background-size: cover;
     }
   nav#navbar {
     display: flex;
@@ -362,10 +352,6 @@ p.quote {
     width: 95vw;
     }
   div#carousel-home {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     height: 50vh;
     width: 95vw;
     margin-top: 3%;
@@ -545,11 +531,12 @@ img#scholar {
 
 button.mood {
   position: sticky; top: 8%;
+  margin-left: 3%;
 }
 
 button.homemood {
   position: sticky; top: 2%;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 
 #modal {
@@ -586,7 +573,7 @@ h2.project-header {
 }
 p#portfolio-description {
   color: black;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
@@ -602,7 +589,7 @@ header.project-header {
   margin-right: 30%;
   border: 8px solid purple;
   border-radius: 30px;
-  margin-bottom: 3%;
+  margin-bottom: 10%;
 
 }
 #project-title {
@@ -625,7 +612,9 @@ img#coffee {
 }
 
 img#kali {
-  margin-left: 20%;
+  /* margin-left: 20%; */
+  width: 30vw;
+  height: 38vw;
 }
 
 div.projects {
@@ -633,7 +622,7 @@ background-color: rgba(255,255,255,0.5);
 padding: 2%;
 border-radius: 15px;
 margin-top: 2%;
-margin-bottom: 2%;
+margin-bottom: 10%;
 }
 
 div#p2{
@@ -646,4 +635,115 @@ div#p3 {
 
 h2#card {
   color: white;
+}
+
+main.proj {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+@media (max-width : 475px){
+  a#navlink{
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width : 800px) {
+  header.project-header {
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+}
+
+@media (max-width : 395px) {
+  h1#project-title {
+    font-size: 1.5em;
+  }
+  p.quote {
+    font-size: 0.75em;
+  }
+  body {
+    height: 100vh;
+    width: 100%;
+  }
+  footer {
+    position: sticky; bottom: 0;
+  }
+}
+
+
+@media (max-width : 640px) {
+  p.quote {
+    font-size: 1.5em;
+  }
+}
+
+/* RESUME DIV STYLING */
+
+/* <main class = "resume-flexbox">
+  <div class = "resume-div" id = "item1">
+  </div>
+  <div class = "resume-div" id = "item2">
+  </div>
+  <div class = "resume-div" id = "item3">
+  </div>
+  <div class = "resume-div" id = "item4">
+  </div>
+  <div class = "resume-div" id = "item5">
+  </div>
+  <div class = "resume-div" id = "item6">
+  </div> */
+
+main.resume-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+
+}
+
+div.resume-div {
+  height: 65vh;
+  width: 30vw;
+  border: 8px solid purple;
+  border-radius: 15px;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+div#item1 {
+  background-image: url('imgs/TY_selectedbackrnd.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div#item2 {
+  display: flex;
+  background-color: rgba(255,255,255,0.5);
+}
+div#item3 {
+  display: flex;
+  background-color: rgba(255,255,255,0.5);
+}
+
+div#item4 {
+  display: flex;
+  background-color: rgba(255,255,255,0.5);
+}
+
+div#item5 {
+  display: flex;
+  background-color: rgba(255,255,255,0.5);
+}
+
+div#item6 {
+  display: flex;
+  background-color: rgba(255,255,255,0.5);
 }
