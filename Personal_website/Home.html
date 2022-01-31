@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=IM+Fell+English+SC&family=Lato:wght@300;400&family=Lobster&family=Monoton&family=Source+Code+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato:wght@300;400&family=Lobster&family=Monoton&family=Source+Code+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato:wght@300&family=Monoton&family=Source+Code+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
@@ -25,15 +36,13 @@
     <meta charset="utf-8">
     <title>Reid Shipley Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="app.js" charset="utf-8"></script>
   </head>
   <body>
+    <button class = "mood homemood" id = "bio-modal">MOOD CHANGE</button>
     <!-- make this header a flexbox with a background image -->
     <header class="HOME" id = "home-header">
       <!-- give title a black background with an opacity-->
       <h1 id ="Reid">Reid William "Bill" Shipley</h1>
-      <h3 id ="current-page">"Home wasn't built in a day." <br> ~ Jane Sherwood Ace</h3>
       <nav id = "navbar">
         <ul id = "navlinks">
           <li class = "home"><a id = "navlink" href="Bio.html">BIO</a></li>
@@ -42,7 +51,6 @@
         </ul>
       </nav>
     </header>
-    <button class = "mood homemood" id = "bio-modal">MOOD CHANGE</button>
     <div id = "carousel-home">
       <button class="button previous"><<<</button>
       <div id = "picture-box">

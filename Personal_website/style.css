@@ -14,7 +14,7 @@ header#home-header {
   display: flex;
   justify-content: space-between;
   /* border-style: inset; */
-  box-shadow: 5px 5px 5px #598ad2, 10px 10px 5px #2e285d;
+  box-shadow: 5px 5px 30px black;
   width: 70vw;
   height: 70vh;
   margin-left: 15%;
@@ -29,7 +29,7 @@ header#home-header {
 
 #Reid {
 margin-top: 0;
-padding-left: 2%;
+padding-left: 4%;
 padding-right: 2%;
 padding-top: 2%;
 padding-bottom: 2%;
@@ -38,9 +38,9 @@ width: 50vw;
 margin-left: 2%;
 margin-top: 2%;
 margin-bottom: 0;
-border: 5px solid #a989f1;
+border: 8px solid #a989f1;
 border-radius: 50px;
-box-shadow: 10px 10px 50px #2e285d;
+box-shadow: 10px 10px 50px black;
 font-family: 'Monoton', cursive;
 font-size: 3em;
 letter-spacing: 15px;
@@ -132,7 +132,7 @@ li.home:before {
   position: absolute;
   height: 33.33%;
   width: 0%;
-  background-color: purple;
+  background: rgba(0,0,0,0.5);
   right: 0;
   z-index: 0;
   top: 33.33%;
@@ -144,7 +144,9 @@ li.home:after {
   position: absolute;
   height: 33.33%;
   width: 0%;
-  background-color: purple;
+  background: rgba(0,0,0,0.5);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   left: 0;
   z-index: 0;
   bottom: 0;
@@ -156,7 +158,9 @@ a#navlink:before {
   content: "";
   height: 33.33%;
   width: 0%;
-  background-color: purple;
+  background: rgba(0,0,0,0.5);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   bottom: 66.66%;
   left: 0;
   z-index: -1;
@@ -164,7 +168,7 @@ a#navlink:before {
 }
 
 a#navlink:after {
-  color: lavender;
+  color: whitesmoke;
   transition: all 0.5s;
 }
 
@@ -175,7 +179,7 @@ width: 100%;
 }
 
 a#navlink:hover {
-  color: lavender;
+  color: whitesmoke;
   transition: all 0.5s;
 }
 
@@ -204,7 +208,10 @@ ion-icon {
   color: lavender;
 }
 
-
+ion-icon:hover {
+  font-size: 3.5em;
+  transition: all 0.25s;
+}
 
 
 
@@ -230,6 +237,7 @@ div#picture-box {
   height:60vh;
   width:50vw;
   margin-bottom: 0%;
+  z-index: 0;
 
 }
 
@@ -240,6 +248,8 @@ p.quote {
   color: black;
   font-family: 'Lato', sans-serif;
   line-height: 150%;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 15px;
 
 }
 @media (min-width: 1900px) {
@@ -383,7 +393,7 @@ border-radius: 20%;
 
 
 button.button:hover {
-  background-color: lavender;
+  background-color: whitesmoke;
   padding: 1%;
   font-size: 1.25em;
   color: purple;
@@ -430,11 +440,11 @@ article.bio-segment {
 #bio-div {
   display: flex;
   flex-direction: column;
-  background-color: lavender;
-  opacity: 0.5;
+  background-color: rgba(255,255,255,0.5);
+  opacity: 1;
   width: 35vw;
   padding: 2%;
-  border: 3px solid purple;
+  border-radius: 15px;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -509,8 +519,7 @@ img#scholar {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: lavender;
-    opacity: 0.5;
+    opacity: 1;
     width: 80vw;
     height: 35vh;
     padding: 5%;
@@ -534,8 +543,13 @@ img#scholar {
 
 /* MODAL BIO */
 
-#bio-modal {
+button.mood {
   position: sticky; top: 8%;
+}
+
+button.homemood {
+  position: sticky; top: 2%;
+  margin-left: 5%;
 }
 
 #modal {
@@ -563,22 +577,22 @@ img#scholar {
   display: none;
 
 }
-h2#project-header {
-  color: white;
+h2.project-header {
+  color: black;
   font-size: 3em;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Passion One', cursive;
+  color: purple;
 }
 p#portfolio-description {
-  color: white;
+  color: black;
   font-size: 3em;
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
 
 header.project-header {
-  background-color: lavender;
-  opacity: 0.8;
+  background-color: rgba(255,255,255,0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -588,7 +602,7 @@ header.project-header {
   margin-right: 30%;
   border: 8px solid purple;
   border-radius: 30px;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 
 }
 #project-title {
@@ -600,17 +614,36 @@ header.project-header {
 }
 
 #project-info {
-  color: purple;
   font-size: 2em;
   font-family: 'Lato', sans-serif;
 
 }
 
 img#coffee {
-  width: 30vw;
-  height: 30vw;
+  width: 25vw;
+  height: 25vw;
 }
 
 img#kali {
-  margin-left: 25%;
+  margin-left: 20%;
+}
+
+div.projects {
+background-color: rgba(255,255,255,0.5);
+padding: 2%;
+border-radius: 15px;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
+div#p2{
+  background: none;
+}
+
+div#p3 {
+  background: none;
+}
+
+h2#card {
+  color: white;
 }
