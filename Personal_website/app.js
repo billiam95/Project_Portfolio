@@ -33,6 +33,34 @@ $(`.previous`).on(`click`, () => {
   $(`.carousel-image-home`).eq(imageNum).fadeIn(500)
 })
 
+// button for resume swapping
+
+let resumeIndex = $(`.swap`).children().length-1
+
+const reidOut = () => {
+  $(`div#reid`).fadeOut(500);
+  $(`div#ty`).fadeIn(1000);
+}
+
+const tyOut = () => {
+  $(`div#ty`).fadeOut(500);
+  $(`div#reid`).fadeIn(500);
+}
+
+$(`div#ty`).fadeOut(500);
+
+const arrayRes = [reidOut,tyOut]
+let resume = 0
+$(`button.swap`).on(`click`, () => {
+  arrayRes[resume]();
+  if (resume < resumeIndex) {
+    resume++;
+    }
+  else {
+    resume = 0;
+    }
+})
+
 
 // Below I will define the color scheme functions
 const offensiveRed = () =>
@@ -47,16 +75,21 @@ $(`button.button`).css(`background-color`,`black`);
 $(`button.button`).css(`color`,`red`);
 $(`ion-icon`).css(`color`, `red`);
 $(`footer`).css(`background-color`, `black`);
+$(`article.bio-segment`).children().css(`background-color`, `rgba(0,0,0,0.6)`)
 $(`h2.bio-header`).css(`color`,`red`);
 $(`h2.bio-header`).css(`font-family`,`'Creepster', cursive`);
-$(`article`).children().css(`background-color`,`whitesmoke`);
 $(`article`).children().css(`border`,`solid 5px red`);
+$(`p.bio-info`).css(`color`, `red`)
 $(`header.project-header`).css(`border`,`8px solid red`);
 $(`header.project-header`).css(`font-family`,`'Creepster', cursive`);
 $(`#project-title`).css(`color`,`red`);
 $(`#project-title`).css(`font-family`,`'Creepster', cursive`);
 $(`h2`).css(`font-family`,`'Creepster', cursive`);
 $(`h2.project-header`).css(`color`, `red` );
+$(`div.resume-flexbox`).children().css(`color`, `red`);
+$(`div.resume-flexbox`).children().css(`border`, `8px solid black`);
+$(`div.resume-flexbox`).children().css(`background-color`, `rgba(0,0,0,0.6)`);
+$(`h2.resume-header`).css(`color`, `red`);
 }
 
 const barbieBoy = () => {
@@ -70,15 +103,22 @@ const barbieBoy = () => {
   $(`button.button`).css(`color`,`#E0218A`);
   $(`ion-icon`).css(`color`, `white`)
   $(`footer`).css(`background-color`, `#F18DBC`)
+  $(`article.bio-segment`).children().css(`background-color`, `rgba(255,255,255,0.6)`)
   $(`h2.bio-header`).css(`color`,`#E0218A`)
   $(`h2.bio-header`).css(`font-family`,`'Lobster', cursive`)
-  $(`article`).children().css(`border`,`solid 5px #E0218A`)
+  $(`article`).children().css(`border`,`solid 8px #F18DBC`)
+  $(`p.bio-info`).css(`color`, `#E0218A`)
   $(`header.project-header`).css(`border`,`8px solid #E0218A`)
   $(`#project-title`).css(`color`,`#E0218A`)
   $(`#project-title`).css(`font-family`,`'Lobster', cursive`)
   $(`h2`).css(`font-family`,`'Lobster', cursive`)
   $(`h2.project-header`).css(`color`, `white` )
   $(`p#portfolio-description`).css(`color`, `white`)
+  // resume
+  $(`div.resume-flexbox`).children().css(`color`, `#E0218A`);
+  $(`div.resume-flexbox`).children().css(`border`, `8px solid #F18DBC`);
+  $(`div.resume-flexbox`).children().css(`background-color`, `rgba(255,255,255,0.8)`);
+  $(`h2.resume-header`).css(`color`, `#E0218A`);
 }
 
 const falloutBoy = () => {
@@ -94,6 +134,7 @@ const falloutBoy = () => {
   $(`footer`).css(`background-color`, `#56483F`)
   $(`h2.bio-header`).css(`color`,`#56483F`)
   $(`h2.bio-header`).css(`font-family`,`'Neonderthaw', cursive` )
+  $(`p.bio-info`).css(`color`, `#56483F`)
   $(`article`).children().css(`border`,`solid 5px #56483F`)
   $(`header.project-header`).css(`border`,`8px solid #56483F`)
   $(`#project-title`).css(`color`,`#56483F`)
@@ -102,6 +143,10 @@ const falloutBoy = () => {
   $(`h2.project-header`).css(`color`, `goldenrod` )
   $(`p#portfolio-description`).css(`color`, `goldenrod`)
   $(`div#p1`).css(`background`, `#56483F`)
+  $(`div.resume-flexbox`).children().css(`color`, `#56483F`);
+  $(`div.resume-flexbox`).children().css(`border`, `8px solid goldenrod`);
+  $(`div.resume-flexbox`).children().css(`background-color`, `rgba(255,255,255,0.6)`);
+  $(`h2.resume-header`).css(`color`, `#56483F`);
 }
 
 const midnightRun = () => {
@@ -118,6 +163,7 @@ const midnightRun = () => {
   $(`h2.bio-header`).css(`color`,`purple`);
   $(`h2.bio-header`).css(`font-family`,`'Monoton', cursive` );
   $(`article`).children().css(`border`,`solid 5px purple`);
+  $(`p.bio-info`).css(`color`, `black`)
   $(`header.project-header`).css(`border`,`8px solid purple`);
   $(`#project-title`).css(`color`,`purple`);
   $(`h1`).css(`font-family`,`'Monoton', cursive` );
@@ -126,6 +172,11 @@ const midnightRun = () => {
   $(`div#p1`).css(`background`, `rgba(255,255,255,0.5)`);
   $(`p#portfolio-description`).css(`color`, `black`);
   $(`h2.bio-header`).css(`font-family`,`'Monoton', cursive` );
+  $(`div.resume-flexbox`).children().css(`color`, `black`);
+  $(`div.resume-flexbox`).children().css(`border`, `8px solid purple`);
+  $(`div.resume-flexbox`).children().css(`background-color`, `rgba(255,255,255,0.6)`);
+  $(`h2.resume-header`).css(`color`, `purple`);
+  $(`h2.resume-header`).css(`font-family`, `'Monoton', cursive`);
 
 }
 

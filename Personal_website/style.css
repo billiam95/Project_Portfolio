@@ -294,7 +294,7 @@ p.quote {
     justify-content: center;
     margin-left: 15%;
     margin-right: 0;
-    height: 40vh;
+    height: 55vh;
   }
   #current-page {
     display: flex;
@@ -531,12 +531,20 @@ img#scholar {
 
 button.mood {
   position: sticky; top: 8%;
-  margin-left: 3%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+button.resume {
+  position: sticky; top: 8%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 button.homemood {
-  position: sticky; top: 2%;
-  margin-left: 3%;
+  position: sticky; top: 5%;
+  margin-left: 5%;
 }
 
 #modal {
@@ -625,6 +633,11 @@ margin-top: 2%;
 margin-bottom: 10%;
 }
 
+div#p1 {
+  height: 30vh;
+  width: 40vw;
+}
+
 div#p2{
   background: none;
 }
@@ -664,7 +677,7 @@ main.proj {
     font-size: 0.75em;
   }
   body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
   }
   footer {
@@ -695,7 +708,7 @@ main.proj {
   <div class = "resume-div" id = "item6">
   </div> */
 
-main.resume-flexbox {
+div.resume-flexbox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -709,7 +722,7 @@ main.resume-flexbox {
 }
 
 div.resume-div {
-  height: 80vh;
+  height: 60vh;
   width: 40vw;
   border: 8px solid purple;
   border-radius: 15px;
@@ -724,14 +737,24 @@ div#item1 {
   background-position: center;
 }
 
+div#item1Reid {
+  background-image: url('imgs/hey.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
 div#item2 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
 }
 div#item3 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
@@ -739,6 +762,7 @@ div#item3 {
 
 div#item4 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
@@ -746,6 +770,7 @@ div#item4 {
 
 div#item5 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
@@ -753,6 +778,7 @@ div#item5 {
 
 div#item6 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
@@ -762,9 +788,10 @@ h2.resume-header {
   color: purple;
   text-decoration: underline;
   padding-left: 3%;
+  padding-right: 3%;
   margin:0;
   font-size: 1.75em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Monoton', cursive;
 }
 
 p.resume-info {
@@ -772,4 +799,23 @@ p.resume-info {
   padding-left: 3%;
   font-size: 1.5em;
   font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 1000px){
+div.resume-div {
+  height: 70vh;
+  width: 85vw;
+}
+
+body {
+  height:100%;
+  width: 100%;
+}
+}
+
+@media (max-width: 400px;) {
+  body {
+    height: 100%;
+    width: 100%;
+  }
 }
