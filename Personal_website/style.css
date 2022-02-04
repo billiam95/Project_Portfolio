@@ -1,0 +1,821 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: linear-gradient( #598ad2,#2e285d,#aa6fa8, #ffada2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* HOME PAGE STYLING */
+/* header flex container */
+header#home-header {
+  display: flex;
+  justify-content: space-between;
+  /* border-style: inset; */
+  box-shadow: 5px 5px 30px black;
+  width: 70vw;
+  height: 70vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2.5%;
+  flex-direction: column;
+  background-image: url('imgs/homeshot.jpg');
+  background-color: rgba(0,0,0,.5;);
+  background-position: center;
+  background-size: cover;
+}
+
+#Reid {
+margin-top: 0;
+padding-left: 4%;
+padding-right: 2%;
+padding-top: 2%;
+padding-bottom: 2%;
+flex-grow: 0;
+width: 50vw;
+margin-left: 2%;
+margin-top: 2%;
+margin-bottom: 0;
+border: 8px solid #a989f1;
+border-radius: 50px;
+box-shadow: 10px 10px 50px black;
+font-family: 'Monoton', cursive;
+font-size: 3em;
+letter-spacing: 15px;
+font-weight: lighter;
+color: purple;
+text-align: center;
+/* border-bottom-right-radius: 80%;
+border-bottom-left-radius: 80%;
+border-top-right-radius: 80%;
+border-top-left-radius: 80%; */
+
+}
+
+
+
+#current-page {
+  display: flex;
+  padding: 5%;
+  margin-left: 55%;
+  margin-right: 10%;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+}
+
+/* HOME NAV BAR */
+nav#navbar {
+display: flex;
+background-color: rgba(255,255,255,0.6);
+width: 70vw;
+z-index: 1;
+}
+
+
+
+/* BIO NAV BAR */
+nav#navbar-bio {
+  display: flex;
+  background-color: rgba(255,255,255,0.6);
+  width: 100vw;
+  position: sticky; top: 0;
+  z-index: 1;
+  }
+
+
+ul#navlinks {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: inherit;
+  z-index: 1;
+}
+
+ul#navlinks-bio {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: inherit;
+}
+
+li.home {
+  position: relative;
+  padding:0 20px;
+  height: 100%;
+  display: flex;
+
+}
+
+
+a#navlink {
+  z-index: 1;
+  color: purple;
+  font-family: 'Monoton', cursive;
+  text-decoration: none;
+  font-size: 3em;
+  padding: 10px 5px;
+}
+
+/* CODE BELOW IS NOT MY OWN DESIGN: INSPIRATION FOR COOL HOVER EFFECT: CODING ARTIST VIA https://www.youtube.com/watch?v=BDvWKwHiSIw&ab_channel=CodingArtist */
+
+li.home:before {
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0%;
+  background: rgba(0,0,0,0.5);
+  right: 0;
+  z-index: 0;
+  top: 33.33%;
+  transition: all 0.5s;
+}
+
+li.home:after {
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0%;
+  background: rgba(0,0,0,0.5);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  left: 0;
+  z-index: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+a#navlink:before {
+  position: absolute;
+  content: "";
+  height: 33.33%;
+  width: 0%;
+  background: rgba(0,0,0,0.5);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  bottom: 66.66%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+a#navlink:after {
+  color: whitesmoke;
+  transition: all 0.5s;
+}
+
+li:hover:before,
+li:hover:after,
+li:hover a#navlink:before {
+width: 100%;
+}
+
+a#navlink:hover {
+  color: whitesmoke;
+  transition: all 0.5s;
+}
+
+
+
+
+/* FOOTER STYLING */
+
+footer {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #2e285d;
+  width: 100%;
+  height: 7vh;
+  position: sticky; bottom: 0;
+}
+
+
+ion-icon {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: lavender;
+}
+
+ion-icon:hover {
+  font-size: 3.5em;
+  transition: all 0.25s;
+}
+
+
+
+
+/* Carousel on my home page and project's page */
+
+div#carousel-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh;
+  width: 70vw;
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-bottom: 3%;
+}
+
+div#picture-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height:60vh;
+  width:50vw;
+  margin-bottom: 0%;
+  z-index: 0;
+
+}
+
+p.quote {
+  display: none;
+  padding: 5% 10%;
+  font-size: 2em;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  line-height: 150%;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 15px;
+
+}
+@media (min-width: 1900px) {
+  p.quote {
+    display: none;
+    padding: 2% 5%;
+    font-size: 2.5em;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    line-height: 150%;
+  }
+  #current-page {
+    display: flex;
+    padding: 1%;
+    margin-left: 55%;
+    margin-right: 5%;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 1600px) {
+
+  a#navlink {
+    font-size: 2em;
+  }
+  p.quote {
+    padding:0;
+    font-size: 2em;
+    line-height: 100%;
+  }
+  div#picture-box {
+    display: flex;
+    justify-content: center;
+    height:40vh;
+    width:55vw;
+    padding: 5%;
+    text-align: center;
+  }
+  div#carousel-home {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 0;
+    height: 55vh;
+  }
+  #current-page {
+    display: flex;
+    padding: 1%;
+    margin-left: 55%;
+    margin-right: 5%;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+  }
+  #Reid {
+  margin-top: 0;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  flex-grow: 0;
+  width: 50vw;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 0;
+  border: 5px solid #a989f1;
+  border-radius: 50px;
+  box-shadow: 10px 10px 50px #2e285d;
+  font-family: 'Monoton', cursive;
+  font-size: 2em;
+  letter-spacing: 7px;
+  font-weight: lighter;
+  color: purple;
+  text-align: center;
+  /* border-bottom-right-radius: 80%;
+  border-bottom-left-radius: 80%;
+  border-top-right-radius: 80%;
+  border-top-left-radius: 80%; */
+  }
+}
+
+@media (max-width: 950px) {
+
+  #Reid {
+    width: 85vw;
+    font-size: 2em;
+
+  }
+  header#home-header {
+    width: 95vw;
+    height: 70vh;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    }
+  nav#navbar {
+    display: flex;
+    background-color: rgba(255,255,255,0.6);
+    width: 95vw;
+    }
+  div#carousel-home {
+    height: 50vh;
+    width: 95vw;
+    margin-top: 3%;
+    margin-left: 2.5%;
+    margin-bottom: 1%;
+    }
+  div#picture-box {
+    height:40vh;
+    width:80vw;
+    margin-bottom: 0;
+    text-align: center;
+    }
+  }
+
+/* BUTTON ANIMATIONS */
+
+button.button {
+background-color: purple;
+padding: 1%;
+font-size: 1em;
+color: lavender;
+border-style: outset;
+border-radius: 20%;
+ }
+
+
+button.button:hover {
+  background-color: whitesmoke;
+  padding: 1%;
+  font-size: 1.25em;
+  color: purple;
+  border-style: outset;
+  border-radius: 20%;
+  font-weight: bolder;
+  transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* BIO CSS */
+
+main.bio {
+  width: 100vw;
+  height: 100%;
+  margin-top: 5%;
+}
+
+
+
+article.bio-segment {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90vw;
+  height: 45vh;
+  margin-left: 4%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+/* images on the bio page */
+.bio {
+  width: 30vw;
+  height:43vh;
+  object-fit: cover;
+  magrin: 3% 2%;
+  box-shadow: 10px 10px 15px black;
+}
+
+
+
+
+#bio-div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255,255,255,0.5);
+  opacity: 1;
+  width: 35vw;
+  padding: 2%;
+  border-radius: 15px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+p.bio-info {
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+}
+
+h2.bio-header {
+  font-size: 4em;
+  margin: 0;
+  font-family: 'Monoton', cursive;
+  font-weight: 900;
+  color: purple;
+}
+
+img#friend {
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (max-width: 1500px) {
+  article.bio-segment {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    height: 45vh;
+    margin-left: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding top: 10%;
+    padding-bottom: 10%;
+  }
+
+  p.bio-info {
+    font-size: 1.5em;
+    }
+  h2.bio-header {
+    font-size: 2em;
+    margin: 0;
+    }
+}
+
+img.bio {
+  width: 40vw;
+  height: 45vh;
+
+}
+
+img#scholar {
+  object-fit: cover;
+  object-position: top;
+
+}
+
+@media (max-width: 800px) {
+
+  article.bio-segment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90vw;
+    height: 90vh;
+    margin-left: 4%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+  #bio-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 1;
+    width: 80vw;
+    height: 35vh;
+    padding: 5%;
+    border: 3px solid purple;
+  }
+  img.bio {
+    width: 90vw;
+    height:50vh;
+
+  }
+
+  p.bio-info {
+    font-size: 1.25em;
+  }
+
+  h2.bio-header {
+    font-size: 1.75em;
+    margin: 0;
+  }
+}
+
+/* MODAL BIO */
+
+button.mood {
+  position: sticky; top: 8%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+button.resume {
+  position: sticky; top: 8%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+button.homemood {
+  position: sticky; top: 5%;
+  margin-left: 5%;
+}
+
+#modal {
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+}
+
+#modal-textbox {
+  background-color: white;
+  height: 350px;
+  width: 550px;
+  border-radius: 2px;
+  margin: 150px auto;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* carousel css for projects page */
+.projects {
+  display: none;
+
+}
+h2.project-header {
+  color: black;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Passion One', cursive;
+  color: purple;
+}
+p#portfolio-description {
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+header.project-header {
+  background-color: rgba(255,255,255,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  margin-top: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 8px solid purple;
+  border-radius: 30px;
+  margin-bottom: 10%;
+
+}
+#project-title {
+  color: purple;
+  font-size: 3em;
+  font-family: 'Monoton', cursive;
+
+
+}
+
+#project-info {
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+
+}
+
+img#coffee {
+  width: 25vw;
+  height: 25vw;
+}
+
+img#kali {
+  /* margin-left: 20%; */
+  width: 30vw;
+  height: 38vw;
+}
+
+div.projects {
+background-color: rgba(255,255,255,0.5);
+padding: 2%;
+border-radius: 15px;
+margin-top: 2%;
+margin-bottom: 10%;
+}
+
+div#p1 {
+  height: 30vh;
+  width: 40vw;
+}
+
+div#p2{
+  background: none;
+}
+
+div#p3 {
+  background: none;
+}
+
+h2#card {
+  color: white;
+}
+
+main.proj {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+@media (max-width : 475px){
+  a#navlink{
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width : 800px) {
+  header.project-header {
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+}
+
+@media (max-width : 395px) {
+  h1#project-title {
+    font-size: 1.5em;
+  }
+  p.quote {
+    font-size: 0.75em;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  footer {
+    position: sticky; bottom: 0;
+  }
+}
+
+
+@media (max-width : 640px) {
+  p.quote {
+    font-size: 1.5em;
+  }
+}
+
+/* RESUME DIV STYLING */
+
+/* <main class = "resume-flexbox">
+  <div class = "resume-div" id = "item1">
+  </div>
+  <div class = "resume-div" id = "item2">
+  </div>
+  <div class = "resume-div" id = "item3">
+  </div>
+  <div class = "resume-div" id = "item4">
+  </div>
+  <div class = "resume-div" id = "item5">
+  </div>
+  <div class = "resume-div" id = "item6">
+  </div> */
+
+div.resume-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+
+}
+
+div.resume-div {
+  height: 60vh;
+  width: 40vw;
+  border: 8px solid purple;
+  border-radius: 15px;
+  margin-top: 3%;
+  box-shadow: 5px 10px 10px black;
+}
+
+div#item1 {
+  background-image: url('imgs/TY_handshake.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div#item1Reid {
+  background-image: url('imgs/hey.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+div#item2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,0.5);
+}
+div#item3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,0.5);
+}
+
+div#item4 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,0.5);
+}
+
+div#item5 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,0.5);
+}
+
+div#item6 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,0.5);
+}
+
+h2.resume-header {
+  color: purple;
+  text-decoration: underline;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin:0;
+  font-size: 1.75em;
+  font-family: 'Monoton', cursive;
+}
+
+p.resume-info {
+  margin: 0;
+  padding-left: 3%;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 1000px){
+div.resume-div {
+  height: 70vh;
+  width: 85vw;
+}
+
+body {
+  height:100%;
+  width: 100%;
+}
+}
+
+@media (max-width: 400px;) {
+  body {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Reid Shipley Projects</title>
-    <link rel="stylesheet" href="stle.css">
-    <script src="app.js" charset="utf-8"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Passion+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=IM+Fell+English+SC&family=Lato:wght@300;400&family=Lobster&family=Monoton&family=Source+Code+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato:wght@300;400&family=Lobster&family=Monoton&family=Source+Code+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato:wght@300&family=Monoton&family=Source+Code+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Monoton&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+      <title>Reid Shipley Home</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="app.js" charset="utf-8"></script>
   </head>
   <body>
-
+    <nav id = "navbar-bio">
+      <ul id = "navlinks-bio">
+        <li class = "home"><a id = "navlink" href="Home.html">HOME</a></li>
+        <li class = "home"><a id = "navlink" href="Bio.html">BIO</a></li>
+        <li class = "home"><a id = "navlink" href="Resume.html">RESUME</a></li>
+      </ul>
+    </nav>
+    <button class = "mood projmood" id = "bio-modal">MOOD</button>
+    <header class = "project-header">
+      <h1 id = "project-title">PROJECTS</h1>
+    </header>
+    <main class = proj>
+      <div id = "carousel-home">
+        <button class="button previous"><<<</button>
+        <div id = "picture-box">
+          <div class = "carousel-image-home projects" id = "p1">
+            <h2 class = "project-header">Portfolio Website</h1>
+            <p id ="portfolio-description">Welcome, you made it!</p>
+          </div>
+          <div class = "carousel-image-home projects" id = "p2">
+            <h2 class ="project-header" id = "card">Check back soon for future projects!</h1>
+            <img id = "coffee" src="imgs/coffee-cup-flat-by-Vexels.png" alt="">
+          </div>
+          <div class = "carousel-image-home projects" id = "p3">
+            <h2 class = "project-header" id = "card">Check back soon for future projects!</h1>
+            <img id = "kali" src="imgs/T_Kali_Alien_Card.png" alt="">
+          </div>
+        </div>
+        <button class = "button next">>>></button>
+      </div>
+    </main>
+    <footer>
+      <!-- linkedin -->
+      <a id ="followme" href="https://www.linkedin.com/in/reid-shipley-software-development/"><ion-icon name="logo-linkedin" href="https://www.linkedin.com/in/reid-shipley-software-development/"></ion-icon></a>
+        <!-- github  -->
+      <a id="followme" href="https://github.com/billiam95/Project_Portfolio"><ion-icon name="logo-github"></ion-icon></a>
+      <!-- discord -->
+      <a id="followme" href="https://discord.gg/fRSSaSH8"><ion-icon name="logo-discord"></ion-icon></a>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

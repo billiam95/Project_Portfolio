@@ -1,29 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=IM+Fell+English+SC&family=Lato:wght@300;400&family=Lobster&family=Monoton&family=Source+Code+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato:wght@300;400&family=Lobster&family=Monoton&family=Source+Code+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato:wght@300&family=Monoton&family=Source+Code+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Monoton&family=Source+Code+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Monoton&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>Reid Shipley Home</title>
-    <link rel="stylesheet" href="stle.css">
-    <script src="app.js" charset="utf-8"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <button class = "mood homemood" id = "bio-modal">MOOD</button>
     <!-- make this header a flexbox with a background image -->
-    <header>
+    <header class="HOME" id = "home-header">
       <!-- give title a black background with an opacity-->
-      <h1 id ="Reid">Reid Shipley</h1>
-      <h3 id ="current-page">This element will display current page user is on</h3>
+      <h1 id ="Reid">Reid William "Bill" Shipley</h1>
       <nav id = "navbar">
         <ul id = "navlinks">
-          <li><a id = "home" href="Home.html">HOME</a></li>
-          <li><a id = "bio" href="Home.html">BIO</a></li>
-          <li><a id = "resume" href="Home.html">RESUME</a></li>
-          <li><a id = "projects" href="Home.html">PROJECTS</a></li>
+          <li class = "home"><a id = "navlink" href="Bio.html">BIO</a></li>
+          <li class = "home"><a id = "navlink" href="Projects.html">PROJECTS</a></li>
+          <li class = "home"><a id = "navlink" href="Resume.html">RESUME</a></li>
+        </ul>
       </nav>
     </header>
-
+    <div id = "carousel-home">
+      <button class="button previous"><<<</button>
+      <div id = "picture-box">
+        <p class = "carousel-image-home quote">"I wish it need not have happened in my time," said Frodo. "So do I," said Gandalf, "and so do all who live to see such times. But that is not for them to decide. All we have to decide is what to do with the time that is given us."<br><br>
+          ― J.R.R. Tolkien</p>
+        <p class = "carousel-image-home quote">
+          "Everyone believes the world's greatest lie..." says the mysterious old man. "What is the world's greatest lie?" the little boy asks. The old man replies, "It's this: that at a certain point in our lives, we lose control of what's happening to us, and our lives become controlled by fate. That's the world's greatest lie."<br><br>
+          — Paulo Coelho</p>
+        <p class = "carousel-image-home quote">"I get by with a little help from my friends." <br><br>
+        - The Beatles</p>
+      </div>
+      <button class = "button next">>>></button>
+    </div>
+    <footer>
+      <!-- linkedin -->
+      <a id ="followme" href="https://www.linkedin.com/in/reid-shipley-software-development/"><ion-icon name="logo-linkedin" href="https://www.linkedin.com/in/reid-shipley-software-development/"></ion-icon></a>
+      <!-- github  -->
+      <a id="followme" href="https://github.com/billiam95/Project_Portfolio"><ion-icon name="logo-github"></ion-icon></a>
+      <!-- discord -->
+      <a id="followme" href="https://discord.gg/fRSSaSH8"><ion-icon name="logo-discord"></ion-icon></a>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
