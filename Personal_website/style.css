@@ -241,17 +241,10 @@ div#picture-box {
 
 }
 
-p.quote {
+img.skills {
   display: none;
-  padding: 5% 10%;
-  font-size: 2em;
-  color: black;
-  font-family: 'Lato', sans-serif;
-  line-height: 150%;
-  background-color: rgba(255,255,255,0.2);
-  border-radius: 15px;
-
 }
+
 @media (min-width: 1900px) {
   p.quote {
     display: none;
@@ -818,4 +811,8 @@ body {
     height: 100%;
     width: 100%;
   }
+}
+
+.ppic:hover {
+  transform: scale(1.5)
 }
